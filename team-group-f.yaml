@@ -81,7 +81,7 @@ metadata:
   name: eva.macdowell.teamf
 spec:
   profile:
-    displayName: Eva MacDowell
+    displayName: Eva MacDowell Test
     email: eva-macdowell@example.com
     picture: https://avatars.dicebear.com/api/avataaars/eva-macdowell@example.com.svg?background=%23fff
   memberOf: [team-f]
@@ -92,7 +92,7 @@ metadata:
   name: lucy.sheehan.teamf
 spec:
   profile:
-    displayName: Lucy Sheehan
+    displayName: Lucy Sheehan Test
     email: lucy-sheehan@example.com
     picture: https://avatars.dicebear.com/api/avataaars/lucy-sheehan@example.com.svg?background=%23fff
   memberOf: [team-f]
