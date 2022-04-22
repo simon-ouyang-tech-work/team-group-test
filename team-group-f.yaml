@@ -81,7 +81,7 @@ metadata:
   name: eva.macdowell.teamf
 spec:
   profile:
-    displayName: Eva MacDowell in Team-F
+    displayName: Eva MacDowell
     email: eva-macdowell@example.com
   memberOf: [team-f]
 ---
@@ -91,6 +91,6 @@ metadata:
   name: lucy.sheehan.teamf
 spec:
   profile:
-    displayName: Lucy Sheehan in Team-F
+    displayName: Lucy Sheehan
     email: lucy-sheehan@example.com
   memberOf: [team-f]
