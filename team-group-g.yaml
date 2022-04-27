@@ -1,0 +1,94 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: artists-portal-domain
+  description: Everything related to artists portal domain
+  links:
+    - url: http://example.com/domain/artists/
+      title: Domain Readme
+    - url: http://example.com/domains/artists/dashboard
+      title: Domain Metrics Dashboard
+      icon: dashboard
+spec:
+  owner: team-f
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: artist-portal-system
+  description: Everything related to artists portal
+  tags:
+    - portal
+spec:
+  owner: team-f
+  domain: artists-portal-domain
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: artist-lookup-2
+  description: Artist Lookup 2
+  tags:
+    - java
+    - data
+  links:
+    - url: https://example.com/user
+      title: Examples Users
+      icon: user
+    - url: https://example.com/group
+      title: Example Group
+      icon: group
+    - url: https://example.com/cloud
+      title: Link with Cloud Icon
+      icon: cloud
+    - url: https://example.com/dashboard
+      title: Dashboard
+      icon: dashboard
+    - url: https://example.com/help
+      title: Support
+      icon: help
+    - url: https://example.com/web
+      title: Website
+      icon: web
+    - url: https://example.com/alert
+      title: Alerts
+      icon: alert
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-f
+  system: artist-portal-system
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-g
+  description: Team G
+spec:
+  type: team
+  profile:
+    displayName: Team G
+    email: team-G@example.com
+    picture: https://avatars.dicebear.com/api/identicon/team-f@example.com.svg?background=%23fff&margin=25
+  parent: boxoffice
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: eva.macdowell.teamg
+spec:
+  profile:
+    displayName: Eva MacDowell
+    email: eva-macdowell@example.com
+  memberOf: [team-g]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: lucy.sheehan.teamg
+spec:
+  profile:
+    displayName: Lucy Sheehan
+    email: lucy-sheehan@example.com
+  memberOf: [team-g]
